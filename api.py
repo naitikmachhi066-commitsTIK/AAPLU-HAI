@@ -5,13 +5,13 @@ import os
 app = Flask(__name__)
 
 # - Security Key taaki koi aur tumhari API use na kar sake
-API_AUTH_TOKEN = "DRX_POWER_ULTRA_V4"
+API_AUTH_TOKEN = "AIzaSyBlkk4NbPMR104uNfOGnEXU3wpyTjfSo3k"
 
 @app.route('/hit', methods=['GET'])
 def start_attack():
     # Auth Check
     token = request.args.get('token')
-    if token != API_AUTH_TOKEN:
+    if token != API_AUTH_TOKEN: AIzaSyBlkk4NbPMR104uNfOGnEXU3wpyTjfSo3k
         return jsonify({"status": "error", "message": "Unauthorized Access"}), 403
 
     # - Parameters from Bot/App
